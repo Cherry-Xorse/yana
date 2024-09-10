@@ -653,7 +653,7 @@ input:checked + .slider:before {
   background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  max-width: 1080px;
+  max-width: 108f0px;
   margin: 0 auto;
   padding: 30px;
 }
@@ -814,17 +814,174 @@ input:checked + .slider:before {
   background: var(--accent);
 }
 
+/* faq */
+
+.faq-container {
+  margin: 60px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-question {
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.faq-answer {
+  color: var(--black1);
+}
+
+/* Sign Up and Login Page Styles */
+
+.sign-container {
+  width: 100%;
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 20px;
+
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--main);
+
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.signup-form,
+.login-form {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--black1);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--black2);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.signup-link,
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--black1);
+}
+
+.signup-link a,
+.login-link a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  color: var(--accent);
+}
+
+/* Responsive design for sign-up and login forms */
+@media (max-width: 480px) {
+  .sign-container {
+    padding: 15px;
+  }
+
+  .signup-form,
+  .login-form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+}
+
+/* appointment */
+.appointment-container {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 100%;
+  margin: 60px;
+  max-width: 1020px;
+}
+
+.appointment-container h2 {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* Responsive design */
 
 @media (min-width: 768px) {
   .event-form {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .form-group {
-    width: 48%;
+    width: 100%;
   }
 
   .btn--add {
